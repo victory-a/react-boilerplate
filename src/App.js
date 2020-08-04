@@ -7,6 +7,7 @@ const AuthenticatedApp = lazy(loadAuthenticatedApp);
 const UnauthenticatedApp = lazy(() => import("app/unauthenticatedApp"));
 
 function App() {
+  // fetch user from state here
   let user = null;
 
   // load authenticated app in bg while user completes auth form
